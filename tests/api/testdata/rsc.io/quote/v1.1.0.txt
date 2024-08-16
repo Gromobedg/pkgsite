@@ -1,1 +1,0 @@
-pkg rsc.io/quote, func Glass() string

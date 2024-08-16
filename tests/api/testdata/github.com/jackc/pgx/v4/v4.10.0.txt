@@ -1,1 +1,0 @@
-pkg github.com/jackc/pgx/v4, func CopyFromSlice(int, func(int) ([]interface{}, error)) CopyFromSource

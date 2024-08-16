@@ -1,2 +1,0 @@
-pkg mvdan.cc/sh/syntax, method (Position) String() string
-pkg mvdan.cc/sh/syntax, type Position struct, Filename string
