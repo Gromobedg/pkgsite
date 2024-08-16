@@ -262,6 +262,16 @@ func NewGoPackagesModuleGetter(ctx context.Context, dir string, patterns ...stri
 			moduleSet[pkg.Module.Path] = pkg.Module
 		}
 	}
+
+	if dir == "common-chaincode" {
+		delete(moduleSet, "gitlab.innoseti.ru/flex/flex-data.git")
+	}
+
+	if dir == "chaincode-flex" {
+		delete(moduleSet, "gitlab.innoseti.ru/flex/flex-data.git")
+		delete(moduleSet, "gitlab.innoseti.ru/common_modules/common-chaincode.git")
+	}
+
 	var modules []*packages.Module
 	for _, m := range moduleSet {
 		modules = append(modules, m)
